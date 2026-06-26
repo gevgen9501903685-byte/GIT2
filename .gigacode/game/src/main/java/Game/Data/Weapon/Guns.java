@@ -3,7 +3,8 @@ package Game.Data.Weapon;
 public enum Guns implements IWeapon {
     AKM(0.2, 3, 870),   // для просых пех
     AKM105 (0.25, 4.2, 1090),   //штурмовые
-    AKM108(0.3, 3.5, 1412)   //дисант
+    AKM108(0.3, 3.5, 1412),   //дисант
+    RPK (0.7, 8,2900)  //нужен staff
     ;
 
     private final double damage;
