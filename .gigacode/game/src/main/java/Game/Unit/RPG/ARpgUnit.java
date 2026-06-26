@@ -1,20 +1,21 @@
 package Game.Unit.RPG;
 
 import Game.Data.Weapon.IRPG;
+import Game.Data.Weapon.IWeapon;
 import Game.Unit.PECH.AUnit;
 
-public class ARpgUnit{
+public class ARpgUnit implements IWeapon{
 
-    private final AUnit staff;
-    private final IRPG rpg;
+    private final IWeapon staff;
+    private final IWeapon rpg;
 
-    public ARpgUnit(AUnit staff, IRPG rpg) {
+    public ARpgUnit(IWeapon staff, IWeapon rpg) {
         checkWeight(staff,rpg);
         this.staff = staff;
         this.rpg = rpg;
     }
 
-    private void checkWeight(AUnit unit, IRPG rpg) {
+    private void checkWeight(IWeapon unit, IWeapon rpg) {
         if((unit.getWeight() + rpg.getWeight() ) > 15)
             System.out.println("ВЕСС");
 

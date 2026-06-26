@@ -1,10 +1,6 @@
 package Game.Data.Weapon;
 
-import Game.Data.Weapon.ALL.IAnti_tank;
-import Game.Data.Weapon.ALL.IAttacks;
-import Game.Data.Weapon.ALL.IBreaking;
-
-public enum RPG implements IRPG{
+public enum RPG implements IWeapon{
     RPG7 (0.3,20,7,2730,15)
 
     ;

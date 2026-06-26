@@ -3,6 +3,7 @@ package Game.TroopsTeam;
 import java.util.ArrayList;
 import java.util.List;
 
+import Game.Data.Weapon.IWeapon;
 import Game.Unit.PECH.AUnit;
 import Game.Unit.PECH.Solder;
 import Game.Unit.RPG.ARpgUnit;
@@ -10,26 +11,24 @@ import Game.Unit.RPG.Rpg7;
 
 public abstract class ATroops2 {
 
-    private  List <AUnit> units ;
-    private  List <ARpgUnit> unitRpg ;
+    private  List <IWeapon> units ;
+
 
         // if( Arrays.stream(units).mapToDouble(e-> e.getWeight()).sum() > 100)
         //     System.out.println("ВЕСС");
         // if(Arrays.stream(units).count() > 10) System.out.println("МНОГО  ");
         // this.units = units;
         
-    public ATroops2(List <AUnit> units, List <ARpgUnit> unitRpg  ) {
-        this.unitRpg = unitRpg;
+    public ATroops2(List <IWeapon> units ) {
         this.units = units;
     }
-    public void addUnit(ARpgUnit unitRpg){
-        this.unitRpg.add(unitRpg);
+    public void addUnit(IWeapon unitRpg){
+        this.units.add(unitRpg);
     }
 
     public double getDamage(){
         var pt = units.stream().mapToDouble(e-> e.getDamage()).sum();
-        var pt2 = unitRpg.stream().mapToDouble(e-> e.getDamage()).sum();
-        return pt + pt2;
+        return pt ;
 
 
     }
@@ -45,13 +44,16 @@ public abstract class ATroops2 {
 
 }
 class rkm extends ATroops2{
-    private static List <AUnit> units = List.of(Solder.solder,Solder.solder,Solder.solder,Solder.solder,Solder.solder);
-    private static List <ARpgUnit> unitRpg = List.of(Rpg7.RPG7,Rpg7.RPG7);
+    private static List <IWeapon> units = List.of(Rpg7.RPG7, Solder.solder,Solder.solder,
+            Rpg7.RPG7, Solder.solder,Solder.solder,
+            Solder.solder,Solder.solder,
+            Solder.solder,Solder.solder);
 
-    public static ATroops2 examp = new rkm(units,unitRpg);
 
-    private rkm(List<AUnit> units, List<ARpgUnit> unitRpg) {
-        super(units, unitRpg);
+    public static ATroops2 examp = new rkm(units);
+
+    private rkm(List<IWeapon> units) {
+        super(units);
     }
 }
 class dem6 {
