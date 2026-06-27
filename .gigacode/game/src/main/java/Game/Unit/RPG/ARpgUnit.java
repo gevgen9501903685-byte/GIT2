@@ -1,8 +1,6 @@
 package Game.Unit.RPG;
 
-import Game.Data.Weapon.IRPG;
 import Game.Data.Weapon.IWeapon;
-import Game.Unit.PECH.AUnit;
 
 public class ARpgUnit implements IWeapon{
 

@@ -9,7 +9,7 @@ import Game.Unit.PECH.Solder;
 import Game.Unit.RPG.ARpgUnit;
 import Game.Unit.RPG.Rpg7;
 
-public abstract class ATroops2 {
+public abstract class ATroops2 implements IWeapon {
 
     private  List <IWeapon> units ;
 
@@ -20,45 +20,37 @@ public abstract class ATroops2 {
         // this.units = units;
         
     public ATroops2(List <IWeapon> units ) {
+        if(units.size() > 10) System.out.println("a lot init");
         this.units = units;
     }
+
     public void addUnit(IWeapon unitRpg){
         this.units.add(unitRpg);
     }
 
+    @Override
     public double getDamage(){
         var pt = units.stream().mapToDouble(e-> e.getDamage()).sum();
-        return pt ;
+        return pt ;}
 
-
+    @Override
+    public int getPrice() {
+        return units.stream().mapToInt(e-> e.getPrice()).sum();
     }
 
-    // public double getWeight(){
-    //     return Arrays.stream(units).mapToDouble(e-> e.getWeight()).sum();
-        
-    // }
-    // public int getPrice(){
-    //     return Arrays.stream(units).mapToInt(e-> e.getPrice()).sum();
-        
-    // }
+    @Override
+    public double getWeight() {
+        return units.stream().mapToDouble(e-> e.getWeight()).sum();
+    }
 
-}
-class rkm extends ATroops2{
-    private static List <IWeapon> units = List.of(Rpg7.RPG7, Solder.solder,Solder.solder,
-            Rpg7.RPG7, Solder.solder,Solder.solder,
-            Solder.solder,Solder.solder,
-            Solder.solder,Solder.solder);
+    @Override
+    public double getAttack() {
+        return units.stream().mapToDouble(e-> e.getAttack()).sum();
+    }
 
-
-    public static ATroops2 examp = new rkm(units);
-
-    private rkm(List<IWeapon> units) {
-        super(units);
+    @Override
+    public double getBreaking() {
+            return units.stream().mapToDouble(e-> e.getBreaking()).sum();
     }
 }
-class dem6 {
-    public static void main(String[] args) {
-        System.out.println(rkm.examp.getDamage());
 
-    }
-}

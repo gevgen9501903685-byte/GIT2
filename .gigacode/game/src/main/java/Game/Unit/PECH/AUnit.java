@@ -37,13 +37,4 @@ public abstract class  AUnit implements IWeapon {
         return j;
     }
 
-    @Override
-    public double getAttack() {
-        return 0;
-    }
-
-    @Override
-    public double getBreaking() {
-        return 0;
-    }
 }
