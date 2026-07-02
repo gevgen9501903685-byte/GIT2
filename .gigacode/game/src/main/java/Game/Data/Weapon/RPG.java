@@ -1,6 +1,6 @@
 package Game.Data.Weapon;
 
-public enum RPG implements IWeapon{
+public enum RPG implements IRPG{
     RPG7 (0.3,20,7,2730,15)
 
     ;
