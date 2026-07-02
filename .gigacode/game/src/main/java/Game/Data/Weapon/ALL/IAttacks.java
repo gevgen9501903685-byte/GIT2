@@ -2,5 +2,7 @@ package Game.Data.Weapon.ALL;
 
 public interface IAttacks {
 
-    double getAttack(); // урон если пробьет
+    default double getAttack(){
+        return 0;
+    }; // урон если пробьет
 }

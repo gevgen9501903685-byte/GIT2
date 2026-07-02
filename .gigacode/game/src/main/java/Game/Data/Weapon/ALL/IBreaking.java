@@ -2,5 +2,7 @@ package Game.Data.Weapon.ALL;
 
 public interface IBreaking {
 
-    double getBreaking(); //пробитее брони
+    default double getBreaking(){
+        return 0;
+    }; //пробитее брони
 }
