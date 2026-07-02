@@ -4,9 +4,9 @@ import Game.Data.Weapon.Grenade;
 import Game.Data.Weapon.Guns;
 import Game.Data.Weapon.IWeapon;
 import Game.Data.Weapon.RPG;
-import Game.Unit.PECH.AUnit;
-import Game.Unit.PECH.Solder;
+import Game.Unit.AUnit;
 
+import Game.Unit.Solder;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

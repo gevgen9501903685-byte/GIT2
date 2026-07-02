@@ -11,7 +11,7 @@ public enum Guns implements IWeapon {
     private final double weight;
     private final int price;
 
-    Guns(double damage, double weight, int price) {
+    private Guns(double damage, double weight, int price) {
         this.damage = damage;
         this.weight = weight;
         this.price = price;

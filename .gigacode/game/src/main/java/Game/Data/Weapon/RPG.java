@@ -14,7 +14,7 @@ public enum RPG implements IRPG{
     private final int price;
     private final double breaking;   //пробитие
 
-    RPG(double damage, double attack, double weight, int price, double breaking) {
+    private RPG(double damage, double attack, double weight, int price, double breaking) {
         this.damage = damage;
         Attack = attack;
 

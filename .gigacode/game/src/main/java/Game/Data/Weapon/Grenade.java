@@ -10,7 +10,7 @@ public enum Grenade implements IWeapon{
     private final double weight;
     private final int price;
 
-    Grenade(double damage, double weight, int price) {
+    private Grenade(double damage, double weight, int price) {
         this.damage = damage;
         this.weight = weight;
         this.price = price;

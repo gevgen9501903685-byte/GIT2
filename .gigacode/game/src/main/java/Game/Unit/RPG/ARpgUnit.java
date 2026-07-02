@@ -1,5 +1,6 @@
 package Game.Unit.RPG;
 
+import Anotaciy.PropertiesUtil;
 import Game.Data.Weapon.IRPG;
 import Game.Unit.PECH.AUnit;
 
@@ -15,7 +16,7 @@ public class ARpgUnit{
     }
 
     private void checkWeight(AUnit unit, IRPG rpg) {
-        if((unit.getWeight() + rpg.getWeight() ) > 15)
+        if((unit.getWeight() + rpg.getWeight() ) > Integer.parseInt(PropertiesUtil.get("weight_RPG")))
             System.out.println("ВЕСС");
 
     }

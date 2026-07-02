@@ -1,9 +1,10 @@
 package Game.TroopsTeam;
 
-import java.util.Arrays;
-
 import Game.Data.Weapon.IWeapon;
-import Game.Unit.PECH.AUnit;
+import Game.Unit.AUnit;
+import org.springframework.stereotype.Component;
+
+import java.util.Arrays;
 
 public abstract class ATroop implements IWeapon{
     public AUnit [] units;
