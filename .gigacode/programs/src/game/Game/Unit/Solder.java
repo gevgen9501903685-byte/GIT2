@@ -1,7 +1,6 @@
 package Game.Unit;
 
 
-import Game.Data.Weapon.*;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;

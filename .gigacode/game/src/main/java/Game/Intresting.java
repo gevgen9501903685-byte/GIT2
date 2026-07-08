@@ -1,12 +1,11 @@
 package Game;
 
 
-import Game.Data.Weapon.Grenade;
-import Game.Data.Weapon.Guns;
-import Game.Data.Weapon.IWeapon;
+import Game.Infantry.Weapon.Grenade;
+import Game.Infantry.Weapon.Guns;
+import Game.Infantry.Weapon.IWeapon;
 
 import java.util.Arrays;
-import java.util.stream.DoubleStream;
 
 public class Intresting {
 

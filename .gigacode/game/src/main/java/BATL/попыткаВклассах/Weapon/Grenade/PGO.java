@@ -1,7 +1,7 @@
 package BATL.попыткаВклассах.Weapon.Grenade;
 
 
-import Game.Data.Weapon.IWeapon;
+import Game.Infantry.Weapon.IWeapon;
 import org.springframework.beans.factory.annotation.Value;
 
 public class PGO implements IWeapon {
