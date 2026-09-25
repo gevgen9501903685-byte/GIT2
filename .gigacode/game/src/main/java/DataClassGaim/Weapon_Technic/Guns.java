@@ -1,6 +1,9 @@
-package Game.Technic.Unit.Weapon_Technic;
+package DataClassGaim.Weapon_Technic;
 
-public enum Guns implements IWeapon {
+import DataClassGaim.Weapon_Technic.ALL.IWeapon;
+import DataClassGaim.Weapon_Technic.ALL.Unit;
+
+public enum Guns implements IWeapon, Unit {
     AKM(0.2, 3, 870),   // для просых пех
     AKM105 (0.25, 4.2, 1090),   //штурмовые
     AKM108(0.3, 3.5, 1412),   //дисант

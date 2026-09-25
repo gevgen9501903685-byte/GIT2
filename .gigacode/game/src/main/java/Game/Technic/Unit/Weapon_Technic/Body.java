@@ -4,7 +4,7 @@ import Game.Infantry.Weapon.IRPG;
 import Game.Infantry.Weapon.IWeapon;
 import Game.Technic.Unit.ITechniks;
 
-public enum Body implements ITechniks {
+public enum Body {
 
     cargo (5,29000), //грузовой бронированый
     easy(10,11800), //kozak
@@ -19,22 +19,22 @@ public enum Body implements ITechniks {
         this.price = price;
     }
 
-    @Override
+
     public double getDamage() {
         return 0;
     }
 
-    @Override
+
     public int getPrice() {
         return price;
     }
 
-    @Override
+
     public double getWeight() {
         return 0;
     }
 
-    @Override
+
     public double getDefend() {
         return defend;
     }

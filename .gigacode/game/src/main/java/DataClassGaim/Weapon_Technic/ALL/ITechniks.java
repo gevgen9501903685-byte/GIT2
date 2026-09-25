@@ -1,4 +1,4 @@
-package Game.Technic.Unit;
+package DataClassGaim.Weapon_Technic.ALL;
 
 public interface ITechniks {
     public double getDamage();

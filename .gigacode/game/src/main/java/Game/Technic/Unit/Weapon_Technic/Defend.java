@@ -23,10 +23,7 @@ public enum Defend implements ITechniks {
         return 0;
     }
 
-    @Override
-    public double getWeight() {
-        return 0;
-    }
+
 
     @Override
     public double getDefend() {
@@ -36,6 +33,16 @@ public enum Defend implements ITechniks {
     @Override
     public int getPrice() {
         return price;
+    }
+
+    @Override
+    public double getAttack() {
+        return 0;
+    }
+
+    @Override
+    public double getBreaking() {
+        return 0;
     }
 
 

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DbClientProjectConnectionStore">
+    <option name="connections">
+      <list>
+        <ConnectionEntry>
+          <option name="ssh">
+            <SshConfig />
+          </option>
+          <option name="ssl">
+            <SslConfig />
+          </option>
+          <option name="id" value="30a3fbaa-fc13-4132-bcf2-32baa77d33fc" />
+          <option name="name" value="New Connection" />
+          <option name="databaseId" value="postgres" />
+          <option name="port" value="5435" />
+          <option name="username" value="jon" />
+          <option name="database" value="postgres" />
+        </ConnectionEntry>
+        <ConnectionEntry>
+          <option name="ssh">
+            <SshConfig />
+          </option>
+          <option name="ssl">
+            <SslConfig />
+          </option>
+          <option name="id" value="fb2f1e3d-c04f-4124-b270-2d5c66b6b3aa" />
+          <option name="name" value="New Connection 2" />
+          <option name="databaseId" value="postgres" />
+          <option name="port" value="5435" />
+          <option name="username" value="postgres" />
+          <option name="database" value="postgres" />
+        </ConnectionEntry>
+      </list>
+    </option>
+  </component>
+</project>

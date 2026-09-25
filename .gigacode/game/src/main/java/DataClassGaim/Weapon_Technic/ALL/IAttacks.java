@@ -1,4 +1,4 @@
-package Game.Technic.Unit.Weapon_Technic.ALL;
+package DataClassGaim.Weapon_Technic.ALL;
 
 public interface IAttacks {
 

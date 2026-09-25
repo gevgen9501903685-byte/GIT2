@@ -1,10 +1,10 @@
-package Game.Technic.Unit.Weapon_Technic;
+package DataClassGaim.Weapon_Technic;
 
-import Game.Infantry.Weapon.IRPG;
-import Game.Infantry.Weapon.IWeapon;
-import Game.Technic.Unit.ITechniks;
 
-public enum Shells_CH implements ITechniks {
+import DataClassGaim.Weapon_Technic.ALL.ITechniks;
+import DataClassGaim.Weapon_Technic.ALL.Unit;
+
+public enum Shells_CH implements ITechniks , Unit {
 
     cn30 (0.1,5,20, 120 ),
 

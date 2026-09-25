@@ -1,7 +1,7 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic",
-    "java.project.sourcePaths": [
-        ".gigacode/programs/src",
-        ".gigacode/game/src/main/java/Game/TroopsTeam"
-    ]
+    "git.ignoreLimitWarning": true,
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx8G -Xms100m -Xlog:disable",
+    "java.compile.nullAnalysis.mode": "automatic"
 }

@@ -1,9 +1,10 @@
-package Game.Technic.Unit.Weapon_Technic;
+package DataClassGaim.Weapon_Technic;
 
-import Game.Infantry.Weapon.IWeapon;
-import Game.Technic.Unit.ITechniks;
 
-public enum Defend implements ITechniks {
+import DataClassGaim.Weapon_Technic.ALL.ITechniks;
+import DataClassGaim.Weapon_Technic.ALL.Unit;
+
+public enum Defend implements ITechniks, Unit {
 
     DZ1(0.2 , 870),
     DZ2 (0.25 , 1090),
@@ -23,10 +24,6 @@ public enum Defend implements ITechniks {
         return 0;
     }
 
-    @Override
-    public double getWeight() {
-        return 0;
-    }
 
     @Override
     public double getDefend() {
@@ -36,6 +33,16 @@ public enum Defend implements ITechniks {
     @Override
     public int getPrice() {
         return price;
+    }
+
+    @Override
+    public double getAttack() {
+        return 0;
+    }
+
+    @Override
+    public double getBreaking() {
+        return 0;
     }
 
 

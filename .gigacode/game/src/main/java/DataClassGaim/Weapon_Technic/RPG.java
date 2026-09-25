@@ -1,6 +1,9 @@
-package Game.Technic.Unit.Weapon_Technic;
+package DataClassGaim.Weapon_Technic;
 
-public enum RPG implements IRPG {
+import DataClassGaim.Weapon_Technic.ALL.IRPG;
+import DataClassGaim.Weapon_Technic.ALL.Unit;
+
+public enum RPG implements IRPG, Unit {
     RPG7 (0.3,20,7,2730,15)
 
     ;

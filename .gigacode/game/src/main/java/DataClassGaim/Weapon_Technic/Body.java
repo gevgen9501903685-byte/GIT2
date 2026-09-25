@@ -1,10 +1,10 @@
-package Game.Technic.Unit.Weapon_Technic;
+package DataClassGaim.Weapon_Technic;
 
-import Game.Infantry.Weapon.IRPG;
-import Game.Infantry.Weapon.IWeapon;
-import Game.Technic.Unit.ITechniks;
 
-public enum Body implements ITechniks {
+import DataClassGaim.Weapon_Technic.ALL.ITechniks;
+import DataClassGaim.Weapon_Technic.ALL.Unit;
+
+public enum Body implements ITechniks, Unit {
 
     cargo (5,29000), //грузовой бронированый
     easy(10,11800), //kozak
@@ -30,7 +30,12 @@ public enum Body implements ITechniks {
     }
 
     @Override
-    public double getWeight() {
+    public double getAttack() {
+        return 0;
+    }
+
+    @Override
+    public double getBreaking() {
         return 0;
     }
 
@@ -38,4 +43,5 @@ public enum Body implements ITechniks {
     public double getDefend() {
         return defend;
     }
+
 }

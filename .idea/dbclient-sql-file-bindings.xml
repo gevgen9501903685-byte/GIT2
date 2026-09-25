@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DbClientSqlFileBindings">
+    <bindings>
+      <Binding>
+        <option name="connectionId" value="30a3fbaa-fc13-4132-bcf2-32baa77d33fc" />
+        <option name="database" value="postgres" />
+        <option name="url" value="db://ad8f25fb-1a51-436b-bd6d-db06130355bf/consoles/Connection" />
+      </Binding>
+    </bindings>
+  </component>
+</project>

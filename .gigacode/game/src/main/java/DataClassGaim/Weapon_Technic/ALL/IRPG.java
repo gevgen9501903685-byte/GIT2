@@ -1,4 +1,4 @@
-package Game.Infantry.Weapon;
+package DataClassGaim.Weapon_Technic.ALL;
 
 public interface IRPG {
     public double getDamage();

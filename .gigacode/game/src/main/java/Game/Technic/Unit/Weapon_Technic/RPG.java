@@ -1,5 +1,7 @@
 package Game.Technic.Unit.Weapon_Technic;
 
+import Game.Infantry.Weapon.IRPG;
+
 public enum RPG implements IRPG {
     RPG7 (0.3,20,7,2730,15)
 

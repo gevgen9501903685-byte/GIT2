@@ -1,5 +1,7 @@
 package Game.Technic.Unit.Weapon_Technic;
 
+import DataClassGaim.Weapon_Technic.ALL.IWeapon;
+
 public enum Guns implements IWeapon {
     AKM(0.2, 3, 870),   // для просых пех
     AKM105 (0.25, 4.2, 1090),   //штурмовые
